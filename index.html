@@ -4,49 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
- <style>
-    .my-div{
-  background-image: url('https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpg?width=750&format=jpg&optimize=medium');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-color:rgb(159, 69, 159) ;
-background-blend-mode: soft-light;
-height:42vh;
-margin: 0;
-}
+    <style>
+        .my-div {
+            background: 
+                linear-gradient(rgba(159, 69, 159, 0.7), rgba(159, 69, 159, 0.7)),
+                url('https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpg?width=750&format=jpg&optimize=medium');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 80vh;
+            position: relative;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #navbar a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+
+        .box2 p {
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .button {
+            background-color: #eb7d4b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div id="box1">
-
-<div class="centered-div">
-            <h2>Cuda</h2>
-        </div>
-        
-        <div id="navbar">
-            
-         <a>HOME</a>
-         <a>SERVICES</a>
-         <a>TEAM</a>
-         <a>SKILL</a>
-         <a>PORTFOLIO</a>
-         <a>TASTIMONIAL</a>
-         <a>CONTACT</a>
+    <div class="my-div">
+        <div class="flex">
+            <div class="centered-div">
+                <h2 style="color: white;">Cuda</h2>
+            </div>
+            <div id="navbar">
+                <a>HOME</a>
+                <a>SERVICES</a>
+                <a>TEAM</a>
+                <a>SKILL</a>
+                <a>PORTFOLIO</a>
+                <a>TASTIMONIAL</a>
+                <a>CONTACT</a>
+            </div>
         </div>
         <div class="container">
             <div class="box2">
                 <p>Hi there! We are the</p>
                 <p>new kids on the block</p>
-                <p> and we build</p>
+                <p>and we build</p>
                 <p>awesome websites</p>
-                <p>and mobile app.</div> 
+                <p>and mobile app.</p>
+            </div> 
+            <button class="button">WORK WITH US!</button>
         </div>
-     <button class="button">WORK WITH US! </button>
-       </div>
-                  <div class="my-div"></div>
-
     </div>
 </body>
 </html>
